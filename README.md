@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/fkistge/tick_tack_toe/master/screenshots/game-preview.png" alt="Game Preview" width="600px" />
+  <img src="./screenshots/game-preview.png" alt="Game Preview" width="600px" />
 </div>
 
 ## 🎮 About the Project
