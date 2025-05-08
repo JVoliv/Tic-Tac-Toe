@@ -1,59 +1,126 @@
-# TicTacToe
+# Angular Tic Tac Toe
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+<div align="center">
+  <img src="https://img.shields.io/badge/Angular-19.1.0-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+  <img src="https://img.shields.io/badge/TypeScript-5.7.2-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/RxJS-7.8.0-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" alt="RxJS" />
+  <img src="https://img.shields.io/badge/SCSS-1.69.5-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS" />
+</div>
 
-## Development server
+<div align="center">
+  <img src="https://raw.githubusercontent.com/fkistge/tick_tack_toe/master/screenshots/game-preview.png" alt="Game Preview" width="600px" />
+</div>
 
-To start a local development server, run:
+## 🎮 About the Project
+
+A modern Tic Tac Toe game built with Angular 19. This project demonstrates Angular best practices, including standalone components, reactive state management, and scalable architecture.
+
+### ✨ Features
+
+- 🎲 Complete Tic Tac Toe game with win and draw detection
+- 📜 Move history with time travel functionality
+- 🎯 Current player turn indication (X or O)
+- 🔄 Game reset functionality
+- 📱 Responsive design
+- 🚀 Standalone component architecture (Angular 19+)
+- ⚡ OnPush Change Detection for better performance
+
+## 🛠️ Technologies Used
+
+- **Angular 19.1.0**: Modern frontend framework with standalone component support
+- **TypeScript 5.7.2**: Strongly typed language built on JavaScript
+- **RxJS 7.8.0**: Reactive programming library with observables
+- **SCSS**: CSS preprocessor for advanced styling
+
+## 🚀 Installation and Setup
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v8 or higher)
+- Angular CLI (v19 or higher)
+
+### Setting up the environment
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/angular-tic-tac-toe.git
+cd angular-tic-tac-toe
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the app in development mode**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. **Access the application**
 
-## Code scaffolding
+Open your browser and navigate to `http://localhost:4200`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🏗️ Project Structure
 
-```bash
-ng generate component component-name
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── board/           # Board component
+│   │   ├── square/          # Individual square component
+│   │   └── history/         # Move history component
+│   ├── models/
+│   │   └── game.model.ts    # Game interfaces and types
+│   ├── services/
+│   │   └── game.service.ts  # Game state management service
+│   ├── app.component.ts     # Root component
+│   └── ...
+├── assets/
+├── styles.scss              # Global styles
+└── ...
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📚 Architecture and Patterns
 
-```bash
-ng generate --help
-```
+This project implements:
 
-## Building
+- **Unidirectional Data Flow**: Game state flows from service to components
+- **Reactive State Management**: Using RxJS BehaviorSubject to control state changes
+- **Standalone Components**: Utilizing Angular's modern approach without NgModules
+- **OnPush Strategy**: For optimized change detection
+- **Responsive Design**: Adaptable layout for different screen sizes
 
-To build the project run:
+## 🧪 Testing
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Run unit tests with:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 📈 Potential Future Enhancements
 
-For end-to-end (e2e) testing, run:
+- Implement scoreboard for multiple matches
+- AI opponent with varying difficulty levels
+- Light/dark theme support
+- Local storage to resume games between sessions
+- Online mode to play with friends
 
-```bash
-ng e2e
-```
+## 📝 License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+This project is licensed under the [MIT License](LICENSE).
 
-## Additional Resources
+## 👤 Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Made with ❤️ as part of my development portfolio.
+
+---
+
+<div align="center">
+  <sub>Built with Angular 19 • Developed to showcase best practices</sub>
+</div>
