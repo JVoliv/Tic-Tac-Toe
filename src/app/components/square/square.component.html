@@ -1,0 +1,7 @@
+<button 
+  class="square" 
+  [class.x]="value === 'X'" 
+  [class.o]="value === 'O'" 
+  (click)="onClick()">
+  {{ value }}
+</button>

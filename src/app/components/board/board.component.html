@@ -1,0 +1,10 @@
+<div class="game-info">
+    <h2>{{ status }}</h2>
+    <button class="btn-reset" (click)="resetGame()">Reiniciar Jogo</button>
+  </div>
+  
+  <div class="board">
+    <div *ngFor="let square of gameState.squares; let i = index" class="board-square">
+      <app-square [value]="square" (squareClick)="makeMove(i)"></app-square>
+    </div>
+  </div>
