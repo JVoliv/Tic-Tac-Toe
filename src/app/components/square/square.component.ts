@@ -5,7 +5,8 @@ import { Player } from '../../models/game.model';
   selector: 'app-square',
   templateUrl: './square.component.html',
   styleUrls: ['./square.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush // Melhora a performance
+  changeDetection: ChangeDetectionStrategy.OnPush, // Melhora a performance
+  standalone: true
 })
 export class SquareComponent {
   @Input() value: Player = null;

@@ -3,13 +3,14 @@ import { Subscription } from 'rxjs';
 import { GameService } from '../../services/game.service';
 import { GameState, Player } from '../../models/game.model';
 import { SquareComponent } from '../square/square.component';
-
+import { NgForOf, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.scss'],
-  imports: [SquareComponent]
+  imports: [SquareComponent, NgForOf, NgIf],
+  standalone: true
 })
 export class BoardComponent implements OnInit, OnDestroy {
   gameState!: GameState;

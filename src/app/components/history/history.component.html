@@ -1,1 +1,13 @@
-<p>history works!</p>
+<div class="history">
+    <h3>Histórico de Jogadas</h3>
+    <ul>
+      <li *ngFor="let move of gameState.history; let i = index">
+        <button 
+          [class.current]="i === gameState.stepNumber"
+          (click)="jumpTo(i)"
+        >
+          {{ i === 0 ? 'Início do jogo' : 'Movimento #' + i }}
+        </button>
+      </li>
+    </ul>
+  </div>
